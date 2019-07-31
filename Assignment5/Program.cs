@@ -6,8 +6,9 @@ using System.Windows.Forms;
 
 namespace Assignment5
 {
-    static class Program
+    public static class Program
     {
+        public static OrderForm orderForm;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,10 @@ namespace Assignment5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            orderForm = new OrderForm();
+
+            Application.Run(orderForm);
         }
     }
 }
