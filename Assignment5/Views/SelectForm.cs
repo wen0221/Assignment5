@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Assignment5
 {
-    public partial class OrderForm : Form
+    public partial class SelectForm : Form
     {
-        public OrderForm()
+        public SelectForm()
         {
             InitializeComponent();
         }

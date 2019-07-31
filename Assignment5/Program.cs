@@ -9,6 +9,14 @@ namespace Assignment5
     public static class Program
     {
         public static OrderForm orderForm;
+        public static SelectForm selectForm;
+        public static Views.StartForm startForm;
+        public static ProductInfoForm proudctInfotForm;
+        public static SplashForm splashtForm;
+        public static AboutForm aboutForm;
+
+
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,7 +27,10 @@ namespace Assignment5
             Application.SetCompatibleTextRenderingDefault(false);
 
             orderForm = new OrderForm();
-
+            selectForm = new SelectForm();
+            startForm = new Views.StartForm();
+            splashtForm = new SplashForm();
+            aboutForm = new AboutForm();
             Application.Run(orderForm);
         }
     }
